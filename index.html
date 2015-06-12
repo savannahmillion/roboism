@@ -4,20 +4,17 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% for post in site.posts %}
+    <div class="featured-ep">
+      <small>ep. 01 // {{ post.date | date: "%b %-d, %Y" }}</small>
+      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <div class="audio-embed">
+      </div>
+      <p>In our kickoff episode we discuss the film ex machina. This episode contains significant spoilers so watch the movie first!</p>
+      <small><a href="#">view show notes &rarr;</a></small>
+      <br/>
+      <small><a href="#">copy episode link to clipboard &rarr;</a></small>
+    </div>
+  {% endfor %}
 
 </div>
