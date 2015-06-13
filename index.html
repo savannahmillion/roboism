@@ -6,12 +6,20 @@ layout: default
 
   {% for post in site.posts %}
     <div class="featured-ep">
-      <small>ep. 01 &#10209; {{ post.date | date: "%m.%-d.%Y" }}</small>
+      <small>ep {{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
       <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+
       <div class="audio-embed">
-        <i class="icon-play2" data-icon="&#xe001;"></i>
+        <div class="play-pause-mute"><i class="icon-play2 play"></i></div>
+        <div><small>00:00</small></div>
+        <div class="progress-bar"></div>
+        <div><small>00:00</small></div>
+        <div class="play-pause-mute"><i class="icon-volume-high mute"></i></div>
       </div>
+
       {{ post.excerpt }}
+      {{ post.soundcloud-link }}<br/>
+
       <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
       <br/><br/>
       <small><a href="#">copy episode link to clipboard &rarr;</a></small>

@@ -6,7 +6,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
+.grey-color {color: $light-grey;}
 a {
     text-decoration: none;
     color: $blue;
@@ -52,11 +52,13 @@ header {
 h1 {
     font-family: $header-font-family;
     color: #fff;
-    font-size: 2.375em;
+    font-size: 3em;
     font-weight: 400;
     a {
+        border: none;
+        color: #fff;
         &:hover {
-            color: $lightest-grey
+            color: $lightest-grey;
         }
     }
 }
@@ -180,13 +182,48 @@ footer {
     }
 }
 
-.audio-embed {
+div.audio-embed {
+    list-style-type: none;
+    padding-left: 0px;
     width: 100%;
     height: 60px;
     background-color: $darkest-grey;
     border-radius: 5px;
-    i {
-        font-size: 2.5em;
+    div {
+        float: left;
+        margin: 0 5px 0 5px;
+        //display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        small {
+            line-height: 2em;
+        }
+    }
+}
+.progress-bar {
+    width: 20%;
+    //position: absolute;
+    //margin: 0px 40px 0px 40px !important;
+}
+
+.progress-bar {
+    //width: 50px;
+    height: 8px;
+    background-color: $light-grey;
+}
+
+i.play {
+    font-size: 2.5em;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+i.mute {
+    font-size: 1.25em;
+    &:hover {
+        cursor: pointer;
     }
 }
 
