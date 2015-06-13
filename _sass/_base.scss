@@ -33,10 +33,6 @@ header {
     }
 }
 
-// .main-content {
-//     background-color: $lightest-grey;
-// }
-
 .grid-container {
     background-color: $dark-grey;
     top: -10px;
@@ -48,7 +44,7 @@ header {
         margin-top: 20px;
         transition: fill 1s linear;
         &:hover #robot {
-            fill: #fff;
+            fill: url(#coolAFgradient);
         }
     }
 }
@@ -92,15 +88,36 @@ ul.social-icons {
             transform: scale(1.25);
         }
         &:before {
-            content: "\ea91";
+            font-family: 'icomoon';
+            speak: none;
+            //content: "\ea94";
             display: block;
-            width: 37px;
-            height: 37px;
+            padding: 10px;
+            width: 17px;
+            height: 17px;
             margin: 0 auto 10px auto;
             border-radius: 50%;
             background-color: $darkest-grey;
             transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
         }
+    }
+}
+
+#itunes-icon {
+    &:before {
+        content: "\eabf";
+    }
+}
+
+#twitter-icon {
+    &:before {
+        content: "\ea91";
+    }
+}
+
+#rss-icon {
+    &:before {
+        content: "\ea94";
     }
 }
 
@@ -153,6 +170,13 @@ footer {
       border-image-slice: 1;
     h3 {
         margin-top: 10px;
+        a {
+            color: $green;
+            border: none;
+            &:hover {
+                color: $blue;
+            }
+        }
     }
 }
 
@@ -161,5 +185,10 @@ footer {
     height: 60px;
     background-color: $darkest-grey;
     border-radius: 5px;
+    i {
+        font-size: 2.5em;
+    }
 }
+
+
 

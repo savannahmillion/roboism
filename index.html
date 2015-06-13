@@ -6,13 +6,14 @@ layout: default
 
   {% for post in site.posts %}
     <div class="featured-ep">
-      <small>ep. 01 // {{ post.date | date: "%b %-d, %Y" }}</small>
+      <small>ep. 01 &#10209; {{ post.date | date: "%m.%-d.%Y" }}</small>
       <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
       <div class="audio-embed">
+        <i class="icon-play2" data-icon="&#xe001;"></i>
       </div>
-      <p>In our kickoff episode we discuss the film ex machina. This episode contains significant spoilers so watch the movie first!</p>
-      <small><a href="#">view show notes &rarr;</a></small>
-      <br/>
+      {{ post.excerpt }}
+      <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
+      <br/><br/>
       <small><a href="#">copy episode link to clipboard &rarr;</a></small>
     </div>
   {% endfor %}
