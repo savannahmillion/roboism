@@ -63,6 +63,11 @@ h1 {
     }
 }
 
+h2 {
+    font-size: 1.5em;
+    margin: 0px 0px 20px 0px;
+}
+
 h3 {
     font-size: 1.125em;
     margin: 0px 0px 20px 0px;
@@ -92,7 +97,6 @@ ul.social-icons {
         &:before {
             font-family: 'icomoon';
             speak: none;
-            //content: "\ea94";
             display: block;
             padding: 10px;
             width: 17px;
@@ -170,7 +174,7 @@ footer {
       -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
       border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
       border-image-slice: 1;
-    h3 {
+    h2 {
         margin-top: 10px;
         a {
             color: $green;
@@ -191,7 +195,7 @@ div.audio-embed {
     border-radius: 5px;
     div {
         float: left;
-        margin: 0 5px 0 5px;
+        //margin: 0 5px 0 5px;
         //display: inline-block;
         position: relative;
         top: 50%;
@@ -202,30 +206,52 @@ div.audio-embed {
     }
 }
 .progress-bar {
-    width: 20%;
-    //position: absolute;
-    //margin: 0px 40px 0px 40px !important;
-}
-
-.progress-bar {
-    //width: 50px;
+    width: 60%;
     height: 8px;
     background-color: $light-grey;
 }
 
-i.play {
+.progress {
+    width: 25%;
+    height: 8px;
+    background-color: $green;
+    position: absolute;
+}
+
+i.play, i.pause {
     font-size: 2.5em;
     &:hover {
         cursor: pointer;
     }
 }
 
-i.mute {
+i.pause {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+i.on, i.mute {
     font-size: 1.25em;
     &:hover {
         cursor: pointer;
     }
 }
 
+i.mute {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
 
 
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin: 30px auto 30px auto;
+    border: solid 2px transparent;
+      -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
+      -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
+      border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
+      border-image-slice: 1;
+}

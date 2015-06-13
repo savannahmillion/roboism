@@ -3,12 +3,12 @@ layout: default
 ---
 <div class="post">
 	<small>ep {{ page.number }} <span class="grey-color">&#10209;</span> {{ page.date | date: "%m.%-d.%Y" }}</small>
-      <h3><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+      <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
 
   <article class="post-content">
     {{ content }}
   </article>
 
-  <a href="#"><button>&larr; back to episode list</button></a>
+  <a href="{{ site.baseurl }}/" class="button">&larr; back to episode list</a>
 
 </div>

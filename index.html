@@ -6,15 +6,23 @@ layout: default
 
   {% for post in site.posts %}
     <div class="featured-ep">
-      <small>ep {{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
-      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
       <div class="audio-embed">
-        <div class="play-pause-mute"><i class="icon-play2 play"></i></div>
+        <div class="play-pause">
+          <i class="icon-play play"></i>
+          <i class="icon-pause pause"></i>
+        </div>
         <div><small>00:00</small></div>
-        <div class="progress-bar"></div>
-        <div><small>00:00</small></div>
-        <div class="play-pause-mute"><i class="icon-volume-high mute"></i></div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div><small>-15:32</small></div>
+        <div class="volume">
+          <i class="icon-volume-on on"></i>
+          <i class="icon-volume-mute mute"></i>
+        </div>
       </div>
 
       {{ post.excerpt }}
