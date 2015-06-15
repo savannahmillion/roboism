@@ -189,26 +189,48 @@ h2 a {
 }
 
 div.audio-embed {
-    list-style-type: none;
-    padding-left: 0px;
+    display: table;
     width: 100%;
-    height: 60px;
     background-color: $darkest-grey;
     border-radius: 5px;
     div {
-        float: left;
-        //margin: 0 5px 0 5px;
-        //display: inline-block;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
         small {
             line-height: 2em;
         }
     }
+    iframe {
+        display: none;
+    }
 }
+
+.play-pause {
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 45px;
+}
+
+.time {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.volume {
+    display: table-cell;
+    width: 28px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.progress-bar-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
 .progress-bar {
-    width: 60%;
+    width: 100%;
     height: 8px;
     background-color: $light-grey;
 }
@@ -217,7 +239,7 @@ div.audio-embed {
     width: 0%;
     height: 8px;
     background-color: $green;
-    position: absolute;
+    position: relative;
 }
 
 i.play, i.pause {
@@ -230,9 +252,9 @@ i.play, i.pause {
 }
 
 i.pause {
-    position: absolute;
+    position: relative;
     top: 0;
-    visibility: hidden;
+    display: none;
 }
 
 i.on, i.mute {
@@ -245,9 +267,9 @@ i.on, i.mute {
 }
 
 i.mute {
-    position: absolute;
+    position: relative;
     top: 0;
-    visibility: hidden;
+    display: none;
 }
 
 .main-content {

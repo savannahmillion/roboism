@@ -90,16 +90,16 @@ $(window).load(function(){
 					if(paused){
 						//tell the widget to play and display the "pause" icon
 						widget.play();
-						play.css('visibility', 'hidden');
-						pause.css('visibility', 'visible');
+						play.css('display', 'none');
+						pause.css('display', 'inline');
 
 						hasStarted = true;
 					}
 					else{ //if it's playing
 						//tell the widget to pause and display the "play" icon 
 						widget.pause();
-						play.css('visibility', 'visible');
-						pause.css('visibility', 'hidden');
+						play.css('display', 'inline');
+						pause.css('display', 'none');
 					}
 				});
 			}
@@ -116,13 +116,13 @@ $(window).load(function(){
 					if(volume >= 0.99){
 						//set the volume to zero and display the "muted" icon
 						widget.setVolume(0);
-						mute.css('visibility', 'hidden');
-						unmute.css('visibility', 'visible');
+						mute.css('display', 'none');
+						unmute.css('display', 'inline');
 					}else{//if the volume is not full (in our case, it will be zero)
 						//set the volume to 1 (full) and display the "unmuted" icon
 						widget.setVolume(1);
-						mute.css('visibility', 'visible');
-						unmute.css('visibility', 'hidden');
+						mute.css('display', 'inline');
+						unmute.css('display', 'none');
 					}
 				});
 			}
