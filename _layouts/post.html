@@ -10,17 +10,19 @@ layout: default
 		          <i class="icon-play play"></i>
 		          <i class="icon-pause pause"></i>
 		        </div>
-		        <div><small id="left-time">00:00</small></div>
-		        <div class="progress-bar">
-		          <div class="progress"></div>
+		        <div class="time"><small id="left-time">00:00</small></div>
+		        <div class="progress-bar-container">
+		          <div class="progress-bar">
+		            <div class="progress"></div>
+		          </div>
 		        </div>
-		        <div><small id="right-time">-00:00</small></div>
+		        <div class="time"><small id="right-time">-00:00</small></div>
 		        <div class="volume">
 		          <i class="icon-volume-on on"></i>
 		          <i class="icon-volume-mute mute"></i>
 		        </div>
 
-		        <iframe class="widget" style="visibility: hidden;" src="https://w.soundcloud.com/player/?url=//soundcloud.com{{ page.soundcloud-link }}"></iframe>
+		        <iframe class="widget" style="visibility: hidden;" src="https://w.soundcloud.com/player/?url=//soundcloud.com{{ post.soundcloud-link }}"></iframe>
 		      </div>
 
   <article class="post-content">
