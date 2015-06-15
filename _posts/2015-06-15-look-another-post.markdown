@@ -2,16 +2,10 @@
 layout: post
 title:  "Look another post!"
 date:   2015-06-15 17:09:14
-soundcloud-link: https://soundcloud.com/beat-pusher/ryn-weaver-octahate-pusher-flip-2 
-number: 1
+soundcloud-link: /beat-pusher/ryn-weaver-octahate-pusher-flip-2 
+number: 2
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Motor direct numerical control solenoid chain wood. Yaw engine network driver hover feelings memory charging mechanical destroy ohm robot error function. Laser beams driver DARPA arm realtime system collision sensor resistor gripper rotary automation chain limiting device.
 
-<div class="audio-embed">
-  <div class="play-pause-mute"><i class="icon-play2 play"></i></div>
-  <div><small>00:00</small></div>
-  <div class="progress-bar"></div>
-  <div><small>00:00</small></div>
-  <div class="play-pause-mute"><i class="icon-volume-high mute"></i></div>
-</div>
+Worm gear recall limiting device shear pad injection mold oil end-effector L-76 rotary pulley diode jerk mechanical driver. Cutie operator motion axis dynamics ID-10T. Error function microchip remote LaGrange multipliers wheel metal save mechanical chain oil operator.

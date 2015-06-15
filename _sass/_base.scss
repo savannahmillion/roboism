@@ -20,7 +20,6 @@ a {
 header {
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
     a {
         text-decoration: none;
     }
@@ -42,9 +41,10 @@ header {
     border: none;
     svg {
         margin-top: 20px;
-        transition: fill 1s linear;
+        transition: fill 5s ease;
+        fill: $lightest-grey;
         &:hover #robot {
-            fill: url(#coolAFgradient);
+            fill: $green;
         }
     }
 }
@@ -54,6 +54,7 @@ h1 {
     color: #fff;
     font-size: 3em;
     font-weight: 400;
+    text-transform: uppercase;
     a {
         border: none;
         color: #fff;
@@ -176,13 +177,14 @@ footer {
       border-image-slice: 1;
     h2 {
         margin-top: 10px;
-        a {
-            color: $green;
-            border: none;
-            &:hover {
-                color: $blue;
-            }
         }
+}
+
+h2 a {
+    color: $green;
+    border: none;
+    &:hover {
+        color: $blue;
     }
 }
 
@@ -212,7 +214,7 @@ div.audio-embed {
 }
 
 .progress {
-    width: 25%;
+    width: 0%;
     height: 8px;
     background-color: $green;
     position: absolute;
@@ -221,6 +223,8 @@ div.audio-embed {
 i.play, i.pause {
     font-size: 2.5em;
     &:hover {
+        transition: color .25s linear;
+        color: $green;
         cursor: pointer;
     }
 }
@@ -234,7 +238,9 @@ i.pause {
 i.on, i.mute {
     font-size: 1.25em;
     &:hover {
+        transition: color .25s linear;
         cursor: pointer;
+        color: $green;
     }
 }
 
@@ -244,6 +250,17 @@ i.mute {
     visibility: hidden;
 }
 
+.main-content {
+    height: vh;
+}
+
+.post {
+    height: vh;
+    margin-top: 20px;
+    h2 {
+        margin-top: 10px;
+    }
+}
 
 .button {
     display: inline-block;
@@ -254,4 +271,17 @@ i.mute {
       -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
       border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
       border-image-slice: 1;
+}
+
+.mobile-width-footer {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .mobile-width-footer {
+        display: inline;
+    }
+    .full-width-footer {
+        display: none;
+    }
 }

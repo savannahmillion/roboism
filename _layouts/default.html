@@ -7,7 +7,12 @@
 
     <div class="grid-container">
     
-      {% include header.html %}
+      <div class="grid-40">
+        {% include header.html %}
+        <div class="full-width-footer">
+          {% include footer.html %}
+        </div>
+      </div>
 
       <div class="grid-60">
         <div class="main-content">
@@ -15,7 +20,9 @@
         </div>
       </div>
 
-      {% include footer.html %}
+      <div class="grid- 40 mobile-width-footer">
+        {% include footer.html %}
+      </div>
 
     </div>
 

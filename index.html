@@ -14,23 +14,22 @@ layout: default
           <i class="icon-play play"></i>
           <i class="icon-pause pause"></i>
         </div>
-        <div><small>00:00</small></div>
+        <div><small id="left-time">00:00</small></div>
         <div class="progress-bar">
           <div class="progress"></div>
         </div>
-        <div><small>-15:32</small></div>
+        <div><small id="right-time">-00:00</small></div>
         <div class="volume">
           <i class="icon-volume-on on"></i>
           <i class="icon-volume-mute mute"></i>
         </div>
+
+        <iframe class="widget" style="visibility: hidden;" src="https://w.soundcloud.com/player/?url=//soundcloud.com{{ post.soundcloud-link }}"></iframe>
       </div>
 
       {{ post.excerpt }}
-      {{ post.soundcloud-link }}<br/>
 
       <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
-      <br/><br/>
-      <small><a href="#">copy episode link to clipboard &rarr;</a></small>
     </div>
   {% endfor %}
 
