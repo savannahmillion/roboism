@@ -15,6 +15,8 @@ var PROGRESS_FILL = '.progress';
 var MUTE = '.on';
 var UNMUTE = '.mute';
 
+var TRACKLINK = '.track-link';
+
 //Callback to let us know that all elements of the page have loaded
 $(document).ready(function(){
   	SC.initialize({
@@ -53,7 +55,9 @@ $(document).ready(function(){
 		var leftTime = $(this).find(LEFT_TIME);
 		var rightTime = $(this).find(RIGHT_TIME);
 
-		SC.stream("/tracks/145652619", function(snd){
+		var trackLink = $(this).find(TRACKLINK);
+
+		SC.stream(trackLink.text(), function(snd){
 			sound = snd;
 			duration = sound.getDuration();
 
