@@ -101,16 +101,16 @@ $(document).ready(function(){
 					// 	}
 					// });
 
-					play.css('display', 'inline');
-					pause.css('display', 'none');
+					play.css('display', 'none');
+					pause.css('display', 'inline');
 
 					hasStarted = true;
 				}
 				else{ //if it's playing
 					//tell the widget to pause and display the "play" icon 
 					sound.pause();
-					play.css('display', 'none');
-					pause.css('display', 'inline');
+					play.css('display', 'inline');
+					pause.css('display', 'none');
 				}
 			}
 		});
@@ -123,13 +123,13 @@ $(document).ready(function(){
 				if(sound.getVolume() > 0.99){
 					//set the volume to zero and display the "muted" icon
 					sound.setVolume(0);
-					mute.css('display', 'inline');
-					unmute.css('display', 'none');
+					mute.css('display', 'none');
+					unmute.css('display', 'inline');
 				}else{//if the volume is not full (in our case, it will be zero)
 					//set the volume to 1 (full) and display the "unmuted" icon
 					sound.setVolume(1);
-					mute.css('display', 'none');
-					unmute.css('display', 'inline');
+					mute.css('display', 'inline');
+					unmute.css('display', 'none');
 				}
 			}
 		});
