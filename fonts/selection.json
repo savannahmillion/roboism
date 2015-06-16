@@ -25,7 +25,7 @@
 				"name": "play"
 			},
 			"setIdx": 0,
-			"setId": 2,
+			"setId": 3,
 			"iconIdx": 0
 		},
 		{
@@ -57,7 +57,7 @@
 				"name": "volume-on"
 			},
 			"setIdx": 0,
-			"setId": 2,
+			"setId": 3,
 			"iconIdx": 1
 		},
 		{
@@ -87,7 +87,7 @@
 				"name": "volume-mute"
 			},
 			"setIdx": 0,
-			"setId": 2,
+			"setId": 3,
 			"iconIdx": 2
 		},
 		{
@@ -116,7 +116,7 @@
 				"name": "twitter"
 			},
 			"setIdx": 0,
-			"setId": 2,
+			"setId": 3,
 			"iconIdx": 3
 		},
 		{
@@ -144,7 +144,7 @@
 				"name": "rss"
 			},
 			"setIdx": 0,
-			"setId": 2,
+			"setId": 3,
 			"iconIdx": 4
 		},
 		{
@@ -171,7 +171,7 @@
 				"name": "apple"
 			},
 			"setIdx": 0,
-			"setId": 2,
+			"setId": 3,
 			"iconIdx": 5
 		},
 		{
@@ -180,6 +180,7 @@
 					"M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 928c-229.75 0-416-186.25-416-416s186.25-416 416-416 416 186.25 416 416-186.25 416-416 416zM320 320h128v384h-128zM576 320h128v384h-128z"
 				],
 				"attrs": [],
+				"isMulticolor": false,
 				"tags": [
 					"pause",
 					"player"
@@ -196,9 +197,36 @@
 				"ligatures": "pause, player2",
 				"name": "pause"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
+			"setId": 3,
+			"iconIdx": 6
+		},
+		{
+			"icon": {
+				"paths": [
+					"M891.96 514.204c-18.086 0-35.348 3.52-51.064 9.856-10.506-114.358-110.29-204.060-232-204.060-29.786 0-58.682 5.63-84.318 15.164-9.96 3.702-12.578 7.52-12.578 14.916v402.714c0 7.766 6.24 14.234 14.124 14.996 0.336 0.034 363.536 0.21 365.89 0.21 72.904 0 131.986-56.816 131.986-126.894s-59.134-126.902-132.040-126.902zM400 768h32l16-224.22-16-223.78h-32l-16 223.78zM304 768h-32l-16-162.75 16-157.25h32l16 160zM144 768h32l16-128-16-128h-32l-16 128zM16 704h32l16-64-16-64h-32l-16 64z"
+				],
+				"attrs": [],
+				"tags": [
+					"soundcloud",
+					"brand",
+					"social"
+				],
+				"defaultCode": 58571,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1353,
+				"order": 14,
+				"prevSize": 32,
+				"code": 60100,
+				"ligatures": "soundcloud, brand59",
+				"name": "soundcloud"
+			},
+			"setIdx": 2,
 			"setId": 0,
-			"iconIdx": 278
+			"iconIdx": 452
 		}
 	],
 	"height": 1024,
