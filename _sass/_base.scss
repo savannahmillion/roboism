@@ -315,10 +315,11 @@ span.track-link {
 
 .post {
     img {
-        width: 370px;
+        width: 350px;
         height: auto;
         display: block;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 }
 
@@ -328,5 +329,13 @@ span.track-link {
     }
     .full-width-footer {
         display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .post {
+        img {
+            width: 100%;
+        }
     }
 }
