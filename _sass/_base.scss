@@ -313,6 +313,13 @@ span.track-link {
     display: none;
 }
 
+.post {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width: 780px) {
     .mobile-width-footer {
         display: inline;
