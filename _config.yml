@@ -9,5 +9,7 @@ url: "http://roboism.fm/" # the base hostname & protocol for your site. comment 
 twitter_username: roboismcast
 github_username:  savannahmillion
 
+permalink: title
+
 # Build settings
 markdown: kramdown
