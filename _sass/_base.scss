@@ -332,10 +332,12 @@ span.track-link {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .post {
         img {
             width: 100%;
+            height: auto;
+            display: block;
         }
     }
 }
