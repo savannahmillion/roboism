@@ -10,5 +10,5 @@ permalink: ex-machina
 Alex and Savannah debate the empathetic nature of Ava while trying to remember the male character's names.
 
 Here is the Ex Machina poster:
-<img src="img/02/ex-machina-poster.jpg">
+<img src="../img/02/ex-machina-poster.jpg">
 <small><a href="http://google.com">google images was the source -___-</a></small>
