@@ -1,0 +1,86 @@
+div.audio-embed {
+    display: table;
+    width: 100%;
+    background-color: $darkest-grey;
+    border-radius: 5px;
+    div {
+        small {
+            line-height: 2em;
+        }
+    }
+    iframe {
+        display: none;
+    }
+}
+
+.play-pause {
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 45px;
+}
+
+.time {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.volume {
+    display: table-cell;
+    width: 28px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.progress-bar-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: $light-grey;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.progress {
+    width: 0%;
+    height: 8px;
+    background-color: $green;
+    position: relative;
+}
+
+i.play, i.pause {
+    font-size: 2.5em;
+    &:hover {
+        transition: color .25s linear;
+        color: $green;
+        cursor: pointer;
+    }
+}
+
+i.pause {
+    position: relative;
+    top: 0;
+    display: none;
+}
+
+i.on, i.mute {
+    font-size: 1.25em;
+    &:hover {
+        transition: color .25s linear;
+        cursor: pointer;
+        color: $green;
+    }
+}
+
+i.mute {
+    position: relative;
+    top: 0;
+    display: none;
+}

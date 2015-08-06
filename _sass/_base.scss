@@ -6,7 +6,9 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .grey-color {color: $light-grey;}
+
 a {
     text-decoration: none;
     color: $blue;
@@ -17,36 +19,9 @@ a {
     }
 }
 
-header {
-    width: 100%;
-    text-align: center;
-    a {
-        text-decoration: none;
-    }
-    &:after {
-        content: "";
-        display: block;
-        margin: 30px auto;
-        width: 125px;
-        border: 1px solid $lightest-grey;
-    }
-}
-
 .grid-container {
     background-color: $dark-grey;
     top: -10px;
-}
-
-.roboism-logo {
-    border: none;
-    svg {
-        margin-top: 20px;
-        transition: fill 5s ease;
-        fill: $lightest-grey;
-        &:hover #robot {
-            fill: $green;
-        }
-    }
 }
 
 h1 {
@@ -74,98 +49,7 @@ h3 {
     margin: 0px 0px 20px 0px;
 }
 
-ul.social-icons {
-    background-color: $green;
-    width: 100%;
-    list-style-type: none;
-    padding-left: 0px;
-    margin-bottom: 30px;
-    a {
-        color: $light-grey;
-        transition: color .25s linear;
-        &:hover {
-            color: #fff;
-        }
-    }
-    li {
-        text-align: center;
-        float: left;
-        display: inline-block;
-        width: 33%;
-        &:hover:before {
-            transform: scale(1.25);
-        }
-        &:before {
-            font-family: 'icomoon';
-            speak: none;
-            display: block;
-            padding: 10px;
-            width: 17px;
-            height: 17px;
-            margin: 0 auto 10px auto;
-            border-radius: 50%;
-            background-color: $darkest-grey;
-            transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
-        }
-    }
-}
 
-#itunes-icon {
-    &:before {
-        content: "\eabf";
-    }
-}
-
-#twitter-icon {
-    &:before {
-        content: "\ea91";
-    }
-}
-
-#rss-icon {
-    &:before {
-        content: "\ea94";
-    }
-}
-
-footer {
-    margin-top: 30px;
-}
-
-.host-description {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.host-avatar {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    border: solid 2px transparent;
-      -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
-      -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
-      border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
-      border-image-slice: 1;
-    transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
-    &:hover {
-        transform: scale(1.10);
-    }
-}
-
-#alex-avatar { float: left; margin-right: 20px; }
-#savannah-avatar { float: right; }
-
-.copyright {
-    text-align: center;
-    padding-bottom: 40px;
-    &:before {
-        content: "";
-        display: block;
-        margin: 30px auto;
-        width: 125px;
-        border: 1px solid $lightest-grey;
-    }
-}
 
 .featured-ep {
     margin-top: 20px;
@@ -188,92 +72,7 @@ h2 a {
     }
 }
 
-div.audio-embed {
-    display: table;
-    width: 100%;
-    background-color: $darkest-grey;
-    border-radius: 5px;
-    div {
-        small {
-            line-height: 2em;
-        }
-    }
-    iframe {
-        display: none;
-    }
-}
 
-.play-pause {
-    padding: 5px;
-    display: table-cell;
-    vertical-align: middle;
-    width: 45px;
-}
-
-.time {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 5px;
-}
-
-.volume {
-    display: table-cell;
-    width: 28px;
-    vertical-align: middle;
-    padding: 5px;
-}
-
-.progress-bar-container {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 8px;
-    background-color: $light-grey;
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.progress {
-    width: 0%;
-    height: 8px;
-    background-color: $green;
-    position: relative;
-}
-
-i.play, i.pause {
-    font-size: 2.5em;
-    &:hover {
-        transition: color .25s linear;
-        color: $green;
-        cursor: pointer;
-    }
-}
-
-i.pause {
-    position: relative;
-    top: 0;
-    display: none;
-}
-
-i.on, i.mute {
-    font-size: 1.25em;
-    &:hover {
-        transition: color .25s linear;
-        cursor: pointer;
-        color: $green;
-    }
-}
-
-i.mute {
-    position: relative;
-    top: 0;
-    display: none;
-}
 
 .main-content {
     height: vh;
