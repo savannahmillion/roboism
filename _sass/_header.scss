@@ -28,6 +28,35 @@ header {
     }
 }
 
+.roboism-hover-logo {
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    height: 135px;
+    width: 205px;
+    border-bottom: 0px;
+    background: url("../img/robot-base.svg") no-repeat;
+    background-position: center center /*-50px 0*/;
+    transition: transform 0.3s ease-in-out;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url("../img/robot-hover.svg") no-repeat;
+        background-position: center center /*-50px 0*/;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition:    opacity 0.3s;
+        -o-transition:      opacity 0.3s;
+      }
+      &:hover:after {
+        opacity: 1;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+}
+
 ul.social-icons {
     background-color: $green;
     width: 100%;

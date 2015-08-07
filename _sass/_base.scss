@@ -1,6 +1,7 @@
 body {
     background-color: $darkest-grey;
     background-image: url("../img/repeating-robots.png");
+    background-attachment: fixed;
     font-family: $base-font-family;
     color: $lightest-grey;
     margin-top: 0px;
@@ -80,6 +81,9 @@ h3 {
     border: solid 2px $light-grey;
     h2 {
         margin-top: 10px;
+    }
+    .audio-embed {
+        display: none;
     }
 }
 
