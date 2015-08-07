@@ -4,8 +4,38 @@ layout: default
 
 <div class="home">
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit:1 %}
     <div class="featured-ep">
+      <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+      <div class="audio-embed">
+        <div class="play-pause">
+          <i class="icon-play play"></i>
+          <i class="icon-pause pause"></i>
+        </div>
+        <div class="time"><small id="left-time">00:00</small></div>
+        <div class="progress-bar-container">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="time"><small id="right-time">-00:00</small></div>
+        <div class="volume">
+          <i class="icon-volume-on on"></i>
+          <i class="icon-volume-mute mute"></i>
+        </div>
+        <span class="track-link">{{ post.soundcloud-link }}</span>
+      </div>
+
+      {{ post.excerpt }}
+
+      <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
+    </div>
+  {% endfor %}
+
+  {% for post in site.posts offset:1 %}
+    <div class="all-eps">
       <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
       <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 

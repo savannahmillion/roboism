@@ -61,7 +61,16 @@ h3 {
       border-image-slice: 1;
     h2 {
         margin-top: 10px;
-        }
+    }
+}
+
+.all-eps {
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 2px $light-grey;
+    h2 {
+        margin-top: 10px;
+    }
 }
 
 h2 a {
@@ -76,6 +85,7 @@ h2 a {
 
 .main-content {
     height: vh;
+    padding-bottom: 40px;
 }
 
 .post {
