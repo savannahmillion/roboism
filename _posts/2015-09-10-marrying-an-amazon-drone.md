@@ -7,7 +7,7 @@ number: 10
 permalink: marrying-an-amazon-drone
 ---
 
-Alex and Savannah talk about sex with robots. :|
+Alex and Savannah talk about sex with robots. `:|`
 
 Thanks again to [Busy Beaver](https://www.busybeaver.net/) for sponsoring this episode.
 

@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  {% for post in site.posts limit:1 %}
+  {% for post in site.posts limit:0 %}
     <div class="featured-ep">
       <span class="clear"></span>
       <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
