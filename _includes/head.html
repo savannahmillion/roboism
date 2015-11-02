@@ -14,9 +14,10 @@
 
   <link rel="shortcut icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
 
-  <meta property="og:site_name" content="Roboism{% if page.title %} | {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta property="og:image" content="{{ "img/roboism-preview.png" | prepend: site.baseurl }}" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:site_name" content="Roboism" />
+  <meta property="og:title" content="{% if page.title %}| {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:image" content="www.roboism.fm/img/roboism-preview.png" />
+  <meta property="og:url" content="{{ page.url }}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
   <script>
