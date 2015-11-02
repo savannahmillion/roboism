@@ -14,10 +14,10 @@
 
   <link rel="shortcut icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
 
-  <meta property="og:site_name" content="Roboism" />
+  <meta property="og:site_name" content="Roboism{% if page.title %} | {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:image" content="{{ "img/roboism-preview.png" | prepend: site.baseurl }}" />
-  <meta property="og:url" content="http://www.roboism.fm/" />
-  <meta property="og:description" content="A podcast about robots and feminism but mostly robots" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
