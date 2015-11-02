@@ -9,7 +9,7 @@ permalink: transcendence-and-chill
 
 This was a terrible movie.
 
-Thank you to our sponsors [Emporium](http://emporiumchicago.com/) for helping us watch this terrible, no good, very bad film.
+Thank you to our sponsor [Emporium](http://emporiumchicago.com/) for helping us watch this terrible, no good, very bad film.
 
 - [Elon Musk got a speeding ticket during his cameo](https://transportevolved.com/2014/04/15/johnny-depp-admits-elon-musk-got-speeding-ticket-showing-tesla-model-s/)
 
