@@ -5,6 +5,10 @@ date:   2015-11-02 00:00:01
 soundcloud-link: /tracks/231268954
 number: 12
 permalink: transcendence-and-chill
+tags:
+- bad movies
+- help
+- what
 ---
 
 This was a terrible movie.

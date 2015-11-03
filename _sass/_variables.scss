@@ -1,10 +1,12 @@
 $base-font-family: 'Source Code Pro', 'Courier', mono;
 $header-font-family: 'Montserrat', Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   1rem;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+//
 //Colors
+//
 $darkest-grey: #202325;
 $dark-grey: #31383C;
 $light-grey: #616B70;
@@ -12,3 +14,10 @@ $lightest-grey: #A6ADB2;
 
 $blue: #28AEDE;
 $green: #23D6A3;
+
+//
+// Spacing
+//
+$base-spacing: 1rem;
+$small-spacing: 1rem / 2;
+$large-spacing: 1rem * 2;

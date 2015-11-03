@@ -1,0 +1,171 @@
+//
+// RESET GARBAGE
+//
+h1,p {margin: 0px;}
+
+//
+// TYPOGRAPHY
+//
+p {
+  margin-bottom: $base-spacing;
+  font-size: 0.875em;
+}
+
+//
+// LAYOUT
+//
+body {
+  background-color: $darkest-grey;
+  background-image: url("../img/repeating-robots.png");
+  background-attachment: fixed;
+  font-family: $base-font-family;
+  color: $lightest-grey;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.body-content {
+  @include outer-container();
+
+  background-color: $dark-grey;
+}
+
+.post-list {
+  @include span-columns(6);
+}
+
+//
+// INCLUDES
+//
+.header-footer {
+  @include span-columns(3);
+
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
+}
+
+header {
+  @include fill-parent();
+
+  text-align: center;
+
+  .roboism-hover-logo {
+    margin: $base-spacing 0px;
+  }
+
+  h1 {
+    margin-bottom: $small-spacing;
+  }
+}
+
+.roboism-hover-logo {
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    height: 135px;
+    width: 205px;
+    border-bottom: 0px;
+    background: url("../img/robot-base.svg") no-repeat;
+    background-position: center center /*-50px 0*/;
+    transition: transform 0.3s ease-in-out;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url("../img/robot-hover.svg") no-repeat;
+        background-position: center center /*-50px 0*/;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition:    opacity 0.3s;
+        -o-transition:      opacity 0.3s;
+      }
+      &:hover:after {
+        opacity: 1;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+}
+
+ul.social-icons {
+    background-color: $green;
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 30px;
+    a {
+        color: $light-grey;
+        transition: color .25s linear;
+        &:hover {
+            color: #fff;
+        }
+    }
+    li {
+        text-align: center;
+        float: left;
+        display: inline-block;
+        width: 33%;
+        &:hover:before {
+            transform: scale(1.25);
+        }
+        &:before {
+            font-family: 'icomoon';
+            speak: none;
+            display: block;
+            padding: 10px;
+            width: 17px;
+            height: 17px;
+            margin: 0 auto 10px auto;
+            border-radius: 50%;
+            background-color: $darkest-grey;
+            transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
+        }
+    }
+}
+
+#itunes-icon {
+    &:before {
+        content: "\eabf";
+    }
+}
+
+#twitter-icon {
+    &:before {
+        content: "\ea91";
+    }
+}
+
+#rss-icon {
+    &:before {
+        content: "\ea94";
+    }
+}
+
+footer {
+  @include fill-parent();
+}
+
+//
+// TAGS
+//
+.post-tag-list {
+  padding-left: 0px;
+  margin-bottom: 0px;
+
+  li {
+    display: inline-block;
+    font-size: 0.75em;
+
+    a {
+      color: #fff;
+      background-color: $darkest-grey;
+      border-bottom: 0px;
+      text-transform: uppercase;
+      padding: $small-spacing/2 $small-spacing;
+
+      &:hover, &:active, &:focus {
+        color: $green;
+      }
+    }
+  }
+}
