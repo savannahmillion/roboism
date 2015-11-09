@@ -1,33 +1,33 @@
 ---
-layout: default
+layout: base
 ---
-<div class="post">
-	<small>ep {{ page.number }} <span class="grey-color">&#10209;</span> {{ page.date | date: "%m.%-d.%Y" }}</small>
-      <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+<article>
+	<p class="date">ep {{ page.number }} &#10209; {{ page.date | date: "%m.%-d.%Y" }}</p>
+  <h2 class="article-title"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
 
-            <div class="audio-embed">
-		        <div class="play-pause">
-		          <i class="icon-play play"></i>
-		          <i class="icon-pause pause"></i>
-		        </div>
-		        <div class="time"><small id="left-time">00:00</small></div>
-		        <div class="progress-bar-container">
-		          <div class="progress-bar">
-		            <div class="progress"></div>
-		          </div>
-		        </div>
-		        <div class="time"><small id="right-time">-00:00</small></div>
-		        <div class="volume">
-		          <i class="icon-volume-on on"></i>
-		          <i class="icon-volume-mute mute"></i>
-		        </div>
-		        <span class="track-link">{{ page.soundcloud-link }}</span>
-		      </div>
+  <div class="audio-embed">
+	  <div class="play-pause">
+	    <i class="icon-play play"></i>
+	    <i class="icon-pause pause"></i>
+	  </div>
+	  <div class="time"><small id="left-time">00:00</small></div>
+	  <div class="progress-bar-container">
+	    <div class="progress-bar">
+	      <div class="progress"></div>
+	    </div>
+	  </div>
+  	<div class="time"><small id="right-time">-00:00</small></div>
+	  <div class="volume">
+	    <i class="icon-volume-on on"></i>
+	    <i class="icon-volume-mute mute"></i>
+	  </div>
+  	<span class="track-link">{{ page.soundcloud-link }}</span>
+	</div>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+	<article class="post-content">
+	  {{ content }}
+	</article>
 
-  <a href="{{ site.baseurl }}/" class="button">&larr; back to episode list</a>
+	<a href="{{ site.baseurl }}/" class="button">&larr; back to episode list</a>
 
-</div>
+</article>

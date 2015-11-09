@@ -5,57 +5,22 @@
 
   <body>
 
-    <div class="body-content">
+    <div class="all-site-content">
 
       <aside class="header-footer">
         {% include header.html %}
         {% include footer.html %}
       </aside>
 
-      <div class="post-list">
-          {% for post in site.posts limit:1 %}
-          <div class="featured-ep">
-            <span class="clear"></span>
-            <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
-            <div class="audio-embed">
-              <div class="play-pause">
-                <i class="icon-play play"></i>
-                <i class="icon-pause pause"></i>
-              </div>
-              <div class="time"><small id="left-time">00:00</small></div>
-              <div class="progress-bar-container">
-                <div class="progress-bar">
-                  <div class="progress"></div>
-                </div>
-              </div>
-              <div class="time"><small id="right-time">-00:00</small></div>
-              <div class="volume">
-                <i class="icon-volume-on on"></i>
-                <i class="icon-volume-mute mute"></i>
-              </div>
-              <span class="track-link">{{ post.soundcloud-link }}</span>
-            </div>
-
-            {{ post.excerpt }}
-
-            <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
-
-            <ul class="post-tag-list">
-              {% for tag in post.tags %}
-              <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
-              {% endfor %}
-            </ul>
-
-          </div>
-        {% endfor %}
+      <div class="page-content">
+        {{ content }}
       </div>
 
-
+      <aside class="search">
+        <p>words</p>
+      </aside>
 
     </div>
 
   </body>
-
 </html>

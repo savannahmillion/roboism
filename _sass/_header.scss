@@ -1,112 +1,90 @@
 header {
-    width: 100%;
-    text-align: center;
-    // background-color: $light-grey;
-    // border-radius: 4px;
-    margin-top: 20px;
-    a {
-        text-decoration: none;
-    }
-    &:after {
-        content: "";
-        display: block;
-        margin: 30px auto;
-        width: 125px;
-        border: 1px solid $lightest-grey;
-    }
-}
+  @include fill-parent();
 
-.roboism-logo {
-    border: none;
-    svg {
-        margin-top: 20px;
-        transition: fill 5s ease;
-        fill: $lightest-grey;
-        &:hover #robot {
-            fill: $green;
-        }
-    }
+  text-align: center;
+
+  h1 {
+    margin: $small-spacing 0;
+    color: #fff;
+  }
 }
 
 .roboism-hover-logo {
-    display: inline-block;
-    position: relative;
-    text-indent: -9999px;
-    height: 135px;
-    width: 205px;
-    border-bottom: 0px;
-    background: url("../img/robot-base.svg") no-repeat;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  height: 135px;
+  width: 205px;
+  border-bottom: 0px;
+  background: url("../img/robot-base.svg") no-repeat;
+  background-position: center center /*-50px 0*/;
+  transition: transform 0.3s ease-in-out;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url("../img/robot-hover.svg") no-repeat;
     background-position: center center /*-50px 0*/;
-    transition: transform 0.3s ease-in-out;
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0; left: 0; bottom: 0; right: 0;
-        background: url("../img/robot-hover.svg") no-repeat;
-        background-position: center center /*-50px 0*/;
-        opacity: 0;
-        -webkit-transition: opacity 0.3s;
-        -moz-transition:    opacity 0.3s;
-        -o-transition:      opacity 0.3s;
-      }
-      &:hover:after {
-        opacity: 1;
-      }
-      &:hover {
-        transform: scale(1.05);
-      }
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition:    opacity 0.3s;
+    -o-transition:      opacity 0.3s;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-ul.social-icons {
-    background-color: $green;
-    width: 100%;
-    list-style-type: none;
-    padding-left: 0px;
-    margin-bottom: 30px;
-    a {
-        color: $light-grey;
-        transition: color .25s linear;
-        &:hover {
-            color: #fff;
-        }
-    }
-    li {
-        text-align: center;
-        float: left;
-        display: inline-block;
-        width: 33%;
-        &:hover:before {
-            transform: scale(1.25);
-        }
-        &:before {
-            font-family: 'icomoon';
-            speak: none;
-            display: block;
-            padding: 10px;
-            width: 17px;
-            height: 17px;
-            margin: 0 auto 10px auto;
-            border-radius: 50%;
-            background-color: $darkest-grey;
-            transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
-        }
-    }
-}
+.social-icons {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: $base-spacing;
+  margin-bottom: $large-spacing;
 
-#itunes-icon {
+  a {
+    color: $lightest-grey;
+    transition: color .25s linear;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  li {
+    text-align: center;
+    float: left;
+    display: inline-block;
+    width: 33%;
+    font-size: 0.875em;
+
+    &:hover:before {
+      transform: scale(1.25);
+    }
+
     &:before {
-        content: "\eabf";
+      font-family: 'icomoon';
+      speak: none;
+      display: block;
+      padding: 10px;
+      width: 33px;
+      height: 33px;
+      margin: 0 auto 5px auto;
+      border-radius: 50%;
+      background-color: $darkest-grey;
+      transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
     }
+  }
 }
 
-#twitter-icon {
-    &:before {
-        content: "\ea91";
-    }
-}
-
-#rss-icon {
-    &:before {
-        content: "\ea94";
-    }
-}
+#itunes-icon:before { content: "\eabf"; }
+#twitter-icon:before { content: "\ea91"; }
+#rss-icon:before { content: "\ea94"; }

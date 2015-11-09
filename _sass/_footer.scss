@@ -1,38 +1,43 @@
 footer {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .host-description {
-    width: 100%;
-    margin-bottom: 30px;
+  width: 100%;
+
+  p {
+    padding-left: 75px;
+  }
 }
 
-.host-avatar {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    border: solid 2px transparent;
-      -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
-      -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
-      border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
-      border-image-slice: 1;
-    transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
-    &:hover {
-        transform: scale(1.10);
-    }
+.host-avatar-svg {
+  width: 60px;
+  height: 60px;
+  float: left;
+  transition: transform .2s cubic-bezier(.05,.59,.64,1.46);
+
+  &:hover {
+    transform: scale(1.10);
+  }
 }
 
-#alex-avatar { float: left; margin-right: 20px; }
-#savannah-avatar { float: right; }
+//#alex-avatar, #savannah-avatar { float: left; margin-right: 20px; }
 
 .copyright {
-    text-align: center;
-    padding-bottom: 40px;
-    &:before {
-        content: "";
-        display: block;
-        margin: 30px auto;
-        width: 125px;
-        border: 1px solid $lightest-grey;
-    }
+  text-align: center;
+  padding-bottom: 40px;
+  &:before {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 125px;
+    border: 1px solid $lightest-grey;
+  }
+}
+
+.soundcloud-logo {
+  color: $darkest-grey;
+  border: none;
+  font-size: 4em;
+  margin-top: 15px;
 }

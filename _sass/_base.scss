@@ -1,91 +1,91 @@
-body {
-    background-color: $darkest-grey;
-    background-image: url("../img/repeating-robots.png");
-    background-attachment: fixed;
-    font-family: $base-font-family;
-    color: $lightest-grey;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+// body {
+//     background-color: $darkest-grey;
+//     background-image: url("../img/repeating-robots.png");
+//     background-attachment: fixed;
+//     font-family: $base-font-family;
+//     color: $lightest-grey;
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+// }
 
-.grey-color {color: $light-grey;}
+//.grey-color {color: $light-grey;}
 
-a {
-    text-decoration: none;
-    color: $blue;
-    border-bottom: 2px solid $blue;
-    transition: color .25s linear;
-    &:hover {
-        color: $green;
-    }
-}
+// a {
+//     text-decoration: none;
+//     color: $blue;
+//     border-bottom: 2px solid $blue;
+//     transition: color .25s linear;
+//     &:hover {
+//         color: $green;
+//     }
+// }
 
-.grid-container {
-    background-color: $dark-grey;
-    top: -10px;
-}
+// .grid-container {
+//     background-color: $dark-grey;
+//     top: -10px;
+// }
 
-h1 {
-    font-family: $header-font-family;
-    color: #fff;
-    font-size: 3em;
-    font-weight: 400;
-    text-transform: uppercase;
-    a {
-        border: none;
-        color: #fff;
-        &:hover {
-            color: $lightest-grey;
-        }
-    }
-}
+// h1 {
+//     font-family: $header-font-family;
+//     color: #fff;
+//     font-size: 3em;
+//     font-weight: 400;
+//     text-transform: uppercase;
+//     a {
+//         border: none;
+//         color: #fff;
+//         &:hover {
+//             color: $lightest-grey;
+//         }
+//     }
+// }
+//
+// h2 {
+//     font-size: 1.5em;
+//     margin: 0px 0px 20px 0px;
+// }
+//
+// h3 {
+//     font-size: 1.125em;
+//     margin: 0px 0px 20px 0px;
+// }
 
-h2 {
-    font-size: 1.5em;
-    margin: 0px 0px 20px 0px;
-}
-
-h3 {
-    font-size: 1.125em;
-    margin: 0px 0px 20px 0px;
-}
 
 
+// .featured-ep {
+//     margin-top: 20px;
+//     padding: 20px;
+//     border: solid 2px transparent;
+//       -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
+//       -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
+//       border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
+//       border-image-slice: 1;
+//     h2 {
+//         margin-top: 10px;
+//     }
+//     &:before {
+//         content: 'LATEST';
+//         position: relative;
+//         top: -20px;
+//         left: -20px;
+//         height: 20px;
+//         padding: 2px 8px;
+//         background-color: $blue;
+//         color: white;
+//     }
+// }
 
-.featured-ep {
-    margin-top: 20px;
-    padding: 20px;
-    border: solid 2px transparent;
-      -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
-      -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
-      border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
-      border-image-slice: 1;
-    h2 {
-        margin-top: 10px;
-    }
-    &:before {
-        content: 'LATEST';
-        position: relative;
-        top: -20px;
-        left: -20px;
-        height: 20px;
-        padding: 2px 8px;
-        background-color: $blue;
-        color: white;
-    }
-}
-
-.all-eps {
-    margin-top: 20px;
-    padding: 20px;
-    border: solid 2px $light-grey;
-    h2 {
-        margin-top: 10px;
-    }
-    .audio-embed {
-        display: none;
-    }
-}
+// .all-eps {
+//     margin-top: 20px;
+//     padding: 20px;
+//     border: solid 2px $light-grey;
+//     h2 {
+//         margin-top: 10px;
+//     }
+//     .audio-embed {
+//         display: none;
+//     }
+// }
 
 h2 a {
     color: $green;
@@ -97,70 +97,63 @@ h2 a {
 
 
 
-.main-content {
-    height: vh;
-    padding-bottom: 40px;
-}
+// .main-content {
+//     height: vh;
+//     padding-bottom: 40px;
+// }
 
-.post {
-    height: vh;
-    margin-top: 20px;
-    h2 {
-        margin-top: 10px;
-    }
-}
+// .post {
+//     height: vh;
+//     margin-top: 20px;
+//     h2 {
+//         margin-top: 10px;
+//     }
+// }
 
-span.track-link {
-    display: none;
-}
+// span.track-link {
+//     display: none;
+// }
 
-.soundcloud-logo {
-    color: $darkest-grey;
-    border: none;
-    font-size: 4em;
-    margin-top: 15px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px;
-    margin: 30px auto 30px auto;
-    border: solid 2px transparent;
-      -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
-      -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
-      border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
-      border-image-slice: 1;
-}
+// .button {
+//     display: inline-block;
+//     padding: 10px;
+//     margin: 30px auto 30px auto;
+//     border: solid 2px transparent;
+//       -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
+//       -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
+//       border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
+//       border-image-slice: 1;
+// }
 
 .mobile-width-footer {
     display: none;
 }
 
-.post {
-    img {
-        width: 350px;
-        height: auto;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-}
+// .post {
+//     img {
+//         width: 350px;
+//         height: auto;
+//         display: block;
+//         margin-top: 10px;
+//         margin-bottom: 5px;
+//     }
+// }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+// .video-container {
+//     position: relative;
+//     padding-bottom: 56.25%;
+//     padding-top: 35px;
+//     height: 0;
+//     overflow: hidden;
+// }
+//
+// .video-container iframe {
+//     position: absolute;
+//     top:0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
 
 @media (max-width: 780px) {
     .mobile-width-footer {
