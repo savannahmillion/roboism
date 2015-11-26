@@ -11,6 +11,8 @@ Savannah, Alex, and some listeners share what robots they're thankful for!
 
 Thanks again to [Utter Nonsense](http://www.utternonsensegame.com/) for sponsoring this episode!
 
+And thank you also to [Chicago Podcast Co-op](http://chicagopodcastcoop.com/) and [CLAIRE](https://twitter.com/c_frieds)!
+
 - [David Michaels](https://twitter.com/Vwampage) is thankful for batteries
 <img src="../img/15/batteries.gif">
 
