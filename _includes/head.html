@@ -15,9 +15,10 @@
   <link rel="shortcut icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
 
   <meta property="og:site_name" content="Roboism" />
-  <meta property="og:image" content="img/roboism-preview.png" />
-  <meta property="og:url" content="http://www.roboism.fm/" />
-  <meta property="og:description" content="A podcast about robots and feminism but mostly robots" />
+  <meta property="og:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}" />
+  <meta property="og:image" content="http://www.roboism.fm/img/roboism-preview.png" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -30,9 +31,8 @@
 
   </script>
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
-	<!-- <script src='http://w.soundcloud.com/player/api.js'></script> -->
-	<script src="{{ "/js/audio_player_functions.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/script.js" | prepend: site.baseurl }}"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
+  <script src="{{ "/js/audio_player_functions.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/script.js" | prepend: site.baseurl }}"></script>
 </head>
