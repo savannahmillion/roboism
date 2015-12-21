@@ -248,3 +248,25 @@ footer {
     }
   }
 }
+
+//
+// Header2
+//
+.header2 {
+  width: 100%;
+  background-color: $dark-grey;
+  text-align: center;
+  margin-bottom: 0px;
+
+  .roboism-hover-logo {
+    width: 180px;
+    height: auto;
+    display: inline-block;
+  }
+
+  h1 {
+    display: inline-block;
+    weight: $heavy-font-weight;
+    color: white;
+  }
+}
