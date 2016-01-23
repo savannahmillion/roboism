@@ -256,17 +256,21 @@ footer {
   width: 100%;
   background-color: $dark-grey;
   text-align: center;
-  margin-bottom: 0px;
-
-  .roboism-hover-logo {
-    width: 180px;
-    height: auto;
-    display: inline-block;
-  }
+  margin-bottom: $base-spacing;
+  padding: $small-spacing 0px;
+  border-bottom: 7px solid $darkest-grey;
 
   h1 {
+    margin-bottom: $small-spacing;
     display: inline-block;
-    weight: $heavy-font-weight;
-    color: white;
+    position: relative;
+    bottom: 6px;
+
+    a {
+      font-weight: $heavy-font-weight;
+      color: white;
+      border-bottom-width: 0px;
+      font-size: 50px;
+    }
   }
 }
