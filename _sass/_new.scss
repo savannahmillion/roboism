@@ -173,7 +173,7 @@ article {
 //
 body {
   background-color: $darkest-grey;
-  background-image: url("../img/repeating-robots.png");
+  background-image: url("../img/repeating-robots-2.png");
   background-attachment: fixed;
   margin: 0;
 }
@@ -181,8 +181,8 @@ body {
 .all-site-content {
   @include outer-container();
 
-  background-color: $dark-grey;
-  padding: $base-spacing 0 $large-spacing;
+  //background-color: $dark-grey;
+  //padding: $base-spacing 0 $large-spacing;
 }
 
 .page-content {
@@ -198,7 +198,7 @@ span.track-link { display: none; }
 //
 // INCLUDES
 //
-.header-footer {
+.left-aside {
   @include span-columns(3);
 
   padding-left: $base-spacing;
