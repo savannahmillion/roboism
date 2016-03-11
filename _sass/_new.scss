@@ -50,6 +50,10 @@ a {
   }
 }
 
+.action-img {
+  border-bottom-width: 0px;
+}
+
 //
 // Article Specific Styles
 //
@@ -68,7 +72,9 @@ article {
   }
 
   ul {
+    font-size: 0.875em;
     margin-bottom: $base-spacing;
+    line-height: $large-spacing;
     li {
       &:before {
         content: "\2022";
@@ -79,7 +85,9 @@ article {
   }
 
   ol {
+    font-size: 0.875em;
     margin-bottom: $base-spacing;
+    line-height: $large-spacing;
     counter-reset: li;
 
     li {
@@ -180,17 +188,22 @@ body {
 
 .all-site-content {
   @include outer-container();
+}
 
-  //background-color: $dark-grey;
-  //padding: $base-spacing 0 $large-spacing;
+.left-aside {
+  @include span-columns(3);
 }
 
 .page-content {
   @include span-columns(6);
 }
 
-.search {
+.right-aside {
   @include span-columns(3);
+}
+
+footer {
+  @include fill-parent();
 }
 
 span.track-link { display: none; }
@@ -199,14 +212,74 @@ span.track-link { display: none; }
 // INCLUDES
 //
 .left-aside {
-  @include span-columns(3);
-
   padding-left: $base-spacing;
   padding-right: $base-spacing;
-}
 
-footer {
-  @include fill-parent();
+  .social-icons {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: $base-spacing;
+
+    li {
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      margin: 0 $small-spacing;
+      font-size: 0.875em;
+
+      &:hover {
+        color: #fff;
+      }
+
+      a {
+        color: $lightest-grey;
+        transition: color .25s linear;
+        border-bottom-width: 0px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      &:hover:before {
+        transform: scale(1.25);
+      }
+
+      &:before {
+        font-family: 'icomoon';
+        speak: none;
+        display: block;
+        padding: 7px;
+        width: 33px;
+        height: 33px;
+        margin: 0 auto 5px auto;
+        border-radius: 50%;
+        background-color: $darkest-grey;
+        transition: transform .2s cubic-bezier(.05,.59,.64,1.46),;
+      }
+    }
+  }
+
+  #itunes-icon:before { content: "\eabf"; }
+  #twitter-icon:before { content: "\ea91"; }
+  #rss-icon:before { content: "\ea94"; }
+
+  .host-description {
+    text-align: center;
+    margin-bottom: $base-spacing;
+  }
+
+  .host-avatar-svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: $small-spacing;
+    transition: transform .2s cubic-bezier(.05,.59,.64,1.46);
+
+    &:hover {
+      transform: scale(1.10);
+    }
+  }
+
 }
 
 //
@@ -250,10 +323,9 @@ footer {
 }
 
 //
-// Header2
+// Header
 //
-.header2 {
-  width: 100%;
+header {
   background-color: $dark-grey;
   text-align: center;
   margin-bottom: $base-spacing;
@@ -272,5 +344,34 @@ footer {
       border-bottom-width: 0px;
       font-size: 50px;
     }
+  }
+}
+
+.roboism-hover-logo {
+  display: inline-block;
+  height: 60px;
+  width: 80px;
+  border-bottom: 0px;
+  background: url("../img/robot-base.svg") no-repeat;
+  transition: transform 0.3s ease-in-out;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url("../img/robot-hover.svg") no-repeat;
+    background-position: center center /*-50px 0*/;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition:    opacity 0.3s;
+    -o-transition:      opacity 0.3s;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
