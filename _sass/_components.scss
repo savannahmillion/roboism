@@ -1,0 +1,39 @@
+//
+// Buttons
+//
+.button {
+  display: inline-block;
+  padding: 10px;
+  margin: 30px auto 30px auto;
+  border: solid 2px transparent;
+    -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $green 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $green 100%);
+    border-image: linear-gradient(to bottom right, $blue 0%, $green 100%);
+    border-image-slice: 1;
+}
+
+//
+// TAGS
+//
+.post-tag-list {
+  padding-left: 0px;
+  margin-bottom: 0px;
+
+  li {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.75em;
+
+    a {
+      color: $lightest-grey;
+      background-color: $darkest-grey;
+      border-bottom: 0px;
+      text-transform: uppercase;
+      padding: $small-spacing/2 $small-spacing;
+
+      &:hover, &:active, &:focus {
+        color: $green;
+      }
+    }
+  }
+}

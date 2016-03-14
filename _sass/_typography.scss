@@ -1,0 +1,60 @@
+//
+// TYPOGRAPHY
+//
+body {
+  font-family: $base-font-family;
+  color: $lightest-grey;
+  font-size: 1em;
+  line-height: 1.15em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $header-font-family;
+  font-weight: $base-font-weight;
+  line-height: $base-spacing;
+  margin-bottom: $base-spacing;
+  color: $green;
+}
+
+h1 { font-size: 2.25em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.00em; }
+h5 { font-size: 0.875em; }
+h6 {
+  font-size: 0.775em;
+  text-transform: uppercase;
+}
+
+h2 a {
+  color: $green;
+  border-bottom-width: 0px;
+
+  &:hover {
+      color: $blue;
+  }
+}
+
+p {
+  font-size: 0.875em;
+  margin-bottom: $base-spacing;
+}
+
+small {
+  font-size: 0.775em;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px solid $blue;
+  transition: color .25s linear;
+  &:hover, &:active, &:focus {
+    color: $green;
+    border-bottom-color: $green;
+  }
+}
+
+.action-img {
+  border-bottom-width: 0px;
+}

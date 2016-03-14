@@ -12,7 +12,5 @@ Alex and Savannah talk about Ashley Madison's lady bots and sexist porn in a hal
 Thanks again to the Chicago Podcast Co-Op and Iron Galaxy for sponsoring this episode.
 
 - [Gizmodo's "Almost None of the Women in Ashley Madison Database Ever Used the Site"](http://gizmodo.com/almost-none-of-the-women-in-the-ashley-madison-database-1725558944)
-
 - [FeministFrequency's Women as Reward](https://www.youtube.com/watch?v=WcqEZqBoGdM)
-
 - [Brenda, Lesbian Dating App](http://brenda-lesbian-dating.soft112.com/)
