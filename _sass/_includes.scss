@@ -31,25 +31,25 @@ header {
   background: url("../img/robot-base.svg") no-repeat;
   transition: transform 0.3s ease-in-out;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background: url("../img/robot-hover.svg") no-repeat;
-    background-position: center center /*-50px 0*/;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    -moz-transition:    opacity 0.3s;
-    -o-transition:      opacity 0.3s;
-  }
-
-  &:hover:after {
-    opacity: 1;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0; left: 0; bottom: 0; right: 0;
+  //   background: url("../img/robot-hover.svg") no-repeat;
+  //   background-position: center center /*-50px 0*/;
+  //   opacity: 0;
+  //   -webkit-transition: opacity 0.3s;
+  //   -moz-transition:    opacity 0.3s;
+  //   -o-transition:      opacity 0.3s;
+  // }
+  //
+  // &:hover:after {
+  //   opacity: 1;
+  // }
+  //
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 }
 
 //
@@ -109,6 +109,10 @@ header {
     padding: $small-spacing;
     border: solid 2px $light-grey;
     margin-bottom: $base-spacing;
+
+    @include media($medium-breakpoint) {
+      @include span-columns(12);
+    }
   }
 
   .host-description {
@@ -129,15 +133,11 @@ header {
     &:hover {
       transform: scale(1.10);
     }
-
-    @include media($medium-breakpoint) {
-      @include span-columns(6);
-    }
   }
 
   p {
     @include media($medium-breakpoint) {
-      @include span-columns(6);
+      padding: 0 $base-spacing;
     }
   }
 }
