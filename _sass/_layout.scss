@@ -46,6 +46,12 @@ body {
   }
 }
 
+article {
+  @include media($largest-breakpoint) {
+    padding: 0 $small-spacing;
+  }
+}
+
 .right-aside {
   @include span-columns(3);
 
@@ -56,10 +62,6 @@ body {
   @include media($large-breakpoint) {
     @include fill-parent();
   }
-}
-
-footer {
-  @include fill-parent();
 }
 
 span.track-link { display: none; }

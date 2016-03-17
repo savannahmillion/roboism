@@ -64,32 +64,26 @@ header {
 
     li {
       display: inline-block;
-      position: relative;
-      margin: 0 $small-spacing;
-      font-size: 0.875em;
-
-      @include media($large-breakpoint) { margin: 0; }
-      @include media($medium-breakpoint) { margin: 0 $base-spacing; }
+      font-size: 0.75em;
 
       a {
+        display: block;
+        height: 35px;
+        width: 35px;
         color: $lightest-grey;
         transition: color .25s linear;
         border-bottom-width: 0px;
-        padding: 8px 10px;
-        width: 45px;
-        height: 45px;
+        padding-top: 10px;
         border-radius: 50%;
         background-color: $darkest-grey;
 
         &:hover {
           color: #fff;
         }
+
+        @include media($large-breakpoint) { margin: 0 $small-spacing; }
       }
     }
-
-    // @include media($large-breakpoint) {
-    //   li {}
-    // }
   }
 
   .main-nav {

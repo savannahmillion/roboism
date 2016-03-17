@@ -2,7 +2,7 @@
 title: roboism
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  a podcast about robots and feminism but mostly robots
+  a podcast about robots, technology and feminism but mostly robots
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://roboism.fm" # the base hostname & protocol for your site. comment out for local
