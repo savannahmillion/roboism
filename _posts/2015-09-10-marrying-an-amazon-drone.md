@@ -12,5 +12,4 @@ Alex and Savannah talk about sex with robots. `:|`
 Thanks again to [Busy Beaver](https://www.busybeaver.net/) for sponsoring this episode.
 
 - [Slate's "A.I. Thee Wed"](http://www.slate.com/articles/technology/future_tense/2015/08/humans_should_be_able_to_marry_robots.html)
-
 - [Gizmodo's interview with Zoltan](http://gizmodo.com/367698/technosexual-one-mans-tale-of-robot-love)

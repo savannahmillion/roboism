@@ -1,0 +1,67 @@
+//
+// LAYOUT
+//
+body {
+  background-color: $darkest-grey;
+  background-image: url("../img/repeating-robots-2.png");
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.all-site-content {
+  @include outer-container();
+}
+
+.left-aside {
+  @include span-columns(3);
+
+  @include media($largest-breakpoint) {
+    padding: 0 $small-spacing;
+  }
+
+  @include media($large-breakpoint) {
+    @include span-columns(3);
+    @include omega();
+  }
+
+  @include media($medium-breakpoint) {
+    @include span-columns(12);
+  }
+}
+
+.page-content {
+  @include span-columns(6);
+  margin-bottom: $large-spacing;
+
+  @include media($largest-breakpoint) {
+    padding: 0 $small-spacing;
+  }
+
+  @include media($large-breakpoint) {
+    @include span-columns(9);
+  }
+
+  @include media($medium-breakpoint) {
+    @include span-columns(12);
+  }
+}
+
+article {
+  @include media($largest-breakpoint) {
+    padding: 0 $small-spacing;
+  }
+}
+
+.right-aside {
+  @include span-columns(3);
+
+  @include media($largest-breakpoint) {
+    padding: 0 $small-spacing;
+  }
+
+  @include media($large-breakpoint) {
+    @include fill-parent();
+  }
+}
+
+span.track-link { display: none; }

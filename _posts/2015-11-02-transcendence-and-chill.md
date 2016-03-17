@@ -5,6 +5,15 @@ date:   2015-11-02 00:00:01
 soundcloud-link: /tracks/231268954
 number: 12
 permalink: transcendence-and-chill
+tags:
+- bad movies
+- help
+- what
+- another example
+- what if the tag is really long then what
+- is too many tags a thing
+- is it
+- is it though
 ---
 
 This was a terrible movie.
@@ -12,5 +21,4 @@ This was a terrible movie.
 Thank you to our sponsor [Emporium](http://emporiumchicago.com/) for helping us watch this terrible, no good, very bad film.
 
 - [Elon Musk got a speeding ticket during his cameo](https://transportevolved.com/2014/04/15/johnny-depp-admits-elon-musk-got-speeding-ticket-showing-tesla-model-s/)
-
 - [One star on Rotten Tomatoes](http://www.rottentomatoes.com/m/transcendence_2014/)

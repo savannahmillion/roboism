@@ -5,11 +5,17 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-	"variables",
-	"icomoon",
-	"_grid/unsemantic-grid-responsive",
-	"base",
-	"header",
-	"footer",
-	"audio"
+  // third parties
+  "cssreset",
+  "bourbon/bourbon",
+  "neat/neat",
+  "icomoon",
+  // mine
+  "variables",
+  "typography",
+  "components",
+  "layout",
+  "posts",
+  "includes",
+  "audio"
 ;

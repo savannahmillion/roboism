@@ -4,6 +4,58 @@
 		{
 			"icon": {
 				"paths": [
+					"M576.032 448l-0.002 234.184c0 59.418-0.77 93.656 5.53 110.5 6.25 16.754 21.918 34.146 38.99 44.202 22.684 13.588 48.542 20.376 77.708 20.376 51.854 0 82.478-6.848 133.742-40.54v153.944c-43.7 20.552-81.866 32.594-117.324 40.922-35.5 8.242-73.86 12.406-115.064 12.406-46.828 0-74.456-5.886-110.41-17.656-35.958-11.868-66.66-28.806-92.020-50.54-25.45-21.922-43.022-45.208-52.848-69.832-9.826-24.636-14.716-60.414-14.716-107.244v-359.1h-137.426v-145.006c40.208-13.042 85.164-31.788 113.78-56.152 28.754-24.45 51.766-53.706 69.106-87.944 17.392-34.146 29.348-77.712 35.872-130.516h165.084l-0.002 255.996h255.968v192h-255.968z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"tumblr",
+					"brand",
+					"social"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 1,
+				"id": 1,
+				"prevSize": 32,
+				"code": 59648,
+				"name": "tumblr"
+			},
+			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h416v-448h-128v-128h128v-64c0-105.8 86.2-192 192-192h128v128h-128c-35.2 0-64 28.8-64 64v64h192l-32 128h-160v448h288c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"facebook",
+					"brand",
+					"social"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 32,
+				"code": 59649,
+				"name": "facebook"
+			},
+			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
 					"M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 928c-229.75 0-416-186.25-416-416s186.25-416 416-416 416 186.25 416 416-186.25 416-416 416zM384 288l384 224-384 224z"
 				],
 				"attrs": [],
@@ -24,8 +76,8 @@
 				"ligatures": "play2, player",
 				"name": "play"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 0
 		},
 		{
@@ -56,8 +108,8 @@
 				"ligatures": "volume-high, volume",
 				"name": "volume-on"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 1
 		},
 		{
@@ -86,8 +138,8 @@
 				"ligatures": "volume-mute2, volume5",
 				"name": "volume-mute"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 2
 		},
 		{
@@ -115,8 +167,8 @@
 				"ligatures": "twitter, brand11",
 				"name": "twitter"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 3
 		},
 		{
@@ -143,8 +195,8 @@
 				"ligatures": "feed2, rss",
 				"name": "rss"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 4
 		},
 		{
@@ -170,8 +222,8 @@
 				"ligatures": "apple, brand54",
 				"name": "apple"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 5
 		},
 		{
@@ -197,8 +249,8 @@
 				"ligatures": "pause, player2",
 				"name": "pause"
 			},
-			"setIdx": 0,
-			"setId": 3,
+			"setIdx": 1,
+			"setId": 1,
 			"iconIdx": 6
 		},
 		{
@@ -224,9 +276,9 @@
 				"ligatures": "soundcloud, brand59",
 				"name": "soundcloud"
 			},
-			"setIdx": 2,
-			"setId": 0,
-			"iconIdx": 452
+			"setIdx": 1,
+			"setId": 1,
+			"iconIdx": 7
 		}
 	],
 	"height": 1024,
@@ -248,7 +300,8 @@
 				"baseline": 6.25,
 				"whitespace": 50
 			},
-			"autoHost": true
+			"autoHost": true,
+			"embed": false
 		},
 		"imagePref": {
 			"prefix": "icon-",
@@ -260,8 +313,7 @@
 		"historySize": 100,
 		"showCodes": false,
 		"quickUsageToken": {
-			"UntitledProject": "MzUzZWQ3NzQxODYzZTI3ZmQ0NWJiZWM3ODQxOTg5OTAjMSMxNDM0MTM3NDE0IyMj"
-		},
-		"fontHostingName": false
+			"roboism": "ZGFhYjlkYWU4ODRjMjA4MzNiZDYyNjVkN2VhNDkwZTYjMSMxNDU4MjUwMDQ5IyMj"
+		}
 	}
 }

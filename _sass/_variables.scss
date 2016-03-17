@@ -1,10 +1,15 @@
+//
+// Fonts
+//
 $base-font-family: 'Source Code Pro', 'Courier', mono;
 $header-font-family: 'Montserrat', Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   1rem;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-//Colors
+//
+// Colors
+//
 $darkest-grey: #202325;
 $dark-grey: #31383C;
 $light-grey: #616B70;
@@ -12,3 +17,24 @@ $lightest-grey: #A6ADB2;
 
 $blue: #28AEDE;
 $green: #23D6A3;
+
+//
+// Spacing
+//
+$base-spacing: 1em;
+$small-spacing: 1em / 2;
+$large-spacing: 1em * 2;
+
+//
+// Font Weights
+//
+$base-font-weight: 400;
+$heavy-font-weight: 700;
+
+//
+// Breakpoints
+//
+$largest-breakpoint: new-breakpoint(max-width 1170px 12);
+$large-breakpoint: new-breakpoint(max-width 980px 12);
+$medium-breakpoint: new-breakpoint(max-width 780px 12);
+$small-breakpoint: new-breakpoint(max-width 560px 12);

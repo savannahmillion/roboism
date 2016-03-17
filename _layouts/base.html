@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="all-site-content">
+
+      <aside class="left-aside">
+        {% include left-aside.html %}
+      </aside>
+
+      <div class="page-content">
+        {{ content }}
+      </div>
+
+      <aside class="right-aside">
+        {% include right-aside.html %}
+      </aside>
+
+    </div>
+
+  </body>
+</html>
