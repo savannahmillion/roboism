@@ -23,13 +23,18 @@ header {
   }
 }
 
-.roboism-hover-logo {
-  display: inline-block;
+.roboism-logotype {
   height: 60px;
-  width: 80px;
-  border-bottom: 0px;
-  background: url("../img/robot-base.svg") no-repeat;
-  transition: transform 0.3s ease-in-out;
+  margin-bottom: $small-spacing;
+}
+
+// .roboism-hover-logo {
+//   display: inline-block;
+//   height: 60px;
+//   width: 80px;
+//   border-bottom: 0px;
+//   background: url("../img/robot-base.svg") no-repeat;
+//   transition: transform 0.3s ease-in-out;
 
   // &:after {
   //   content: "";
@@ -50,7 +55,7 @@ header {
   // &:hover {
   //   transform: scale(1.05);
   // }
-}
+// }
 
 //
 // Left Aside
