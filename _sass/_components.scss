@@ -13,7 +13,7 @@
 }
 
 //
-// TAGS
+// Tags
 //
 .post-tag-list {
   padding-left: 0px;
@@ -35,5 +35,32 @@
         color: $green;
       }
     }
+  }
+}
+
+//
+// Pagination
+//
+.pagination {
+  text-align: center;
+  margin: $base-spacing 0px;
+
+  a {
+    color: white;
+    border-bottom-width: 0px;
+    margin: 0px $base-spacing;
+    &:hover {
+      color: $green;
+    }
+  }
+
+  span {
+    margin: 0px $base-spacing;
+    color: $light-grey;
+  }
+
+  .active-page {
+    font-weight: bold;
+    // border-bottom: 2px solid $light-grey;
   }
 }
