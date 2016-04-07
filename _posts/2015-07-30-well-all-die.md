@@ -3,6 +3,7 @@ layout: post
 title:  "We'll All Die. Either Way, It's Fine."
 date:   2015-07-30 00:00:01
 soundcloud-link: /tracks/217029274
+simplecast-src: 34618
 number: 7
 permalink: well-all-die
 ---

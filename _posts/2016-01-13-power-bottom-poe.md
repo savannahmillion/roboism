@@ -3,6 +3,7 @@ layout: post
 title:  "Power Bottom Poe"
 date:   2016-01-13 00:00:01
 soundcloud-link: /tracks/241813719
+simplecast-src: x
 number: 17
 permalink: power-bottom-poe
 ---
