@@ -2,10 +2,12 @@
 layout: base
 ---
 <div class="post-list">
-  {% for post in site.posts limit:1 %}
+  {% assign latest_post = site.posts.first %}
+
+  {% if latest_post %}
     <div class="featured-ep">
-      <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
-      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <small>ep.{{ latest_post.number }} <span class="grey-color">&#10209;</span> {{ latest_post.date | date: "%m.%-d.%Y" }}</small>
+      <h2><a href="{{ latest_post.url | prepend: site.baseurl }}">{{ latest_post.title }}</a></h2>
 
       <div class="audio-embed">
         <div class="play-pause">
@@ -23,17 +25,17 @@ layout: base
           <i class="icon-volume-on on"></i>
           <i class="icon-volume-mute mute"></i>
         </div>
-        <span class="track-link">{{ post.soundcloud-link }}</span>
+        <span class="track-link">{{ latest_post.soundcloud-link }}</span>
       </div>
-      {{ post.excerpt }}
-      <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
-      <ul class="post-tag-list">
-        {% for tag in post.tags %}
+      {{ latest_post.excerpt }}
+      <small><a href="{{ latest_post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
+      <ul class="latest_post-tag-list">
+        {% for tag in latest_post.tags %}
         <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
         {% endfor %}
       </ul>
     </div>
-  {% endfor %}
+  {% endif %}
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
@@ -61,13 +63,15 @@ layout: base
   </div>
   {% endif %}
 
-  {% for post in paginator.posts offset:1 %}
-    <div class="all-eps">
-      <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
-      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-      <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
-    </div>
+  {% for post in paginator.posts %}
+    {% unless post.number == latest_post.number %}
+      <div class="all-eps">
+        <small>ep.{{ post.number }} <span class="grey-color">&#10209;</span> {{ post.date | date: "%m.%-d.%Y" }}</small>
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        <small><a href="{{ post.url | prepend: site.baseurl }}">view show notes &rarr;</a></small>
+      </div>
+    {% endunless %}
   {% endfor %}
 
   {% if paginator.total_pages > 1 %}
