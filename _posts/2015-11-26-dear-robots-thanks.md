@@ -3,6 +3,7 @@ layout: post
 title:  "DEAR ROBOTS THANK YOU FOR THE GRILLED CHEESE"
 date:   2015-11-26 00:00:01
 soundcloud-link: /tracks/234834717
+simplecast-src: 34860
 number: 15
 permalink: dear-robots-thanks
 ---

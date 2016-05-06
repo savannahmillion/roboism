@@ -3,6 +3,7 @@ layout: post
 title:  "Putting the Humans Out to Pasture"
 date:   2015-08-06 00:00:01
 soundcloud-link: /tracks/219060338
+simplecast-src: 34625
 number: 9
 permalink: putting-the-humans-out-to-pasture
 ---

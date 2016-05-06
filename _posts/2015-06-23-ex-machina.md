@@ -3,6 +3,7 @@ layout: post
 title:  "Ex Machina"
 date:   2015-06-23 00:00:01
 soundcloud-link: /tracks/211569236
+simplecast-src: 34611
 number: 2
 permalink: ex-machina
 ---

@@ -3,6 +3,7 @@ layout: post
 title:  "Marrying an Amazon Drone"
 date:   2015-09-10 00:00:01
 soundcloud-link: /tracks/223285725
+simplecast-src: 34626
 number: 10
 permalink: marrying-an-amazon-drone
 ---
