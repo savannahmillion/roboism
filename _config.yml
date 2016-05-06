@@ -13,5 +13,12 @@ github_username:  savannahmillion
 
 permalink: title
 
+# Plugins
+gems: [jekyll-paginate]
+
+# Pagination
+paginate: 7
+paginate_path: "/feed/page:num/"
+
 # Build settings
 markdown: kramdown
