@@ -3,6 +3,7 @@ layout: post
 title:  "My Chat is on Now"
 date:   2015-10-07 00:00:01
 soundcloud-link: /tracks/227357808
+simplecast-src: 34627
 number: 11
 permalink: my-chat-is-on-now
 ---

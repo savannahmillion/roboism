@@ -3,6 +3,7 @@ layout: post
 title:  "Did Elon Musk Kill Hitchbot?"
 date:   2015-08-06 00:00:01
 soundcloud-link: /tracks/218062955
+simplecast-src: 34624
 number: 8
 permalink: did-elon-musk-kill-hitchbot
 ---

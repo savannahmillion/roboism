@@ -3,6 +3,7 @@ layout: post
 title:  "A More Friendly Robot"
 date:   2015-11-13 00:00:01
 soundcloud-link: /tracks/232923703
+simplecast-src: 34704
 number: 13
 permalink: a-more-friendly-robot
 ---

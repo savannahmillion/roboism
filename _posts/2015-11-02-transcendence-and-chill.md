@@ -3,17 +3,9 @@ layout: post
 title:  "Transcendence and Chill"
 date:   2015-11-02 00:00:01
 soundcloud-link: /tracks/231268954
+simplecast-src: 34703
 number: 12
 permalink: transcendence-and-chill
-tags:
-- bad movies
-- help
-- what
-- another example
-- what if the tag is really long then what
-- is too many tags a thing
-- is it
-- is it though
 ---
 
 This was a terrible movie.

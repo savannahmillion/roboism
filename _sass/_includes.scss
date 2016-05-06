@@ -150,15 +150,16 @@ header {
 //
 // Right Aside
 //
-.cpc {
+.coops {
   text-align: center;
-  border: solid 2px $light-grey;
-  padding: $small-spacing;
   margin-bottom: $base-spacing;
 
   img {
     width: 100%;
     height: auto;
+    padding: $small-spacing;
+    margin-bottom: $base-spacing;
+    border: solid 2px $light-grey;
   }
 
   @include media($large-breakpoint) {
