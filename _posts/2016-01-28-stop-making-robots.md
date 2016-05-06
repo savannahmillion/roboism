@@ -3,7 +3,7 @@ layout: post
 title:  "Stop Making Robots Walk Off of Tables"
 date:   2016-01-28 00:00:01
 soundcloud-link: /tracks/244154662
-simplecast-src: x
+simplecast-src: 35450
 number: 18
 permalink: stop-making-robots-walk-off-of-tables
 ---
