@@ -64,3 +64,16 @@
     // border-bottom: 2px solid $light-grey;
   }
 }
+
+// Info Banner
+.banner {
+  background-color: $blue;
+  text-align: center;
+  color: #fff;
+  padding: $small-spacing 0;
+
+  a {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+}
